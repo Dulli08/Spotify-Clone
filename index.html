@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://shorturl.at/maqLb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this will contain the navigation bar -->
+    <nav>
+      <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify" />Spotify</li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <!-- This will contain the song list and background image -->
+    <div class="container">
+      <div class="songList">
+        <h1>Best of NF</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img src="NF_-_The_Search.png" alt="1" />
+            <span class="songName">Nate</span>
+            <span class="songListPlay"
+              ><span class="timeStamp">05:02 </span
+              ><i id="1" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </div>
+          <div class="songItem">
+            <img src="NF_-_The_Search.png" alt="1" />
+            <span class="songName">Nate</span>
+            <span class="songListPlay"
+              ><span class="timeStamp">04:00 </span
+              ><i id="2" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </div>
+          <div class="songItem">
+            <img src="NF_-_The_Search.png" alt="1" />
+            <span class="songName">Nate</span>
+            <span class="songListPlay"
+              ><span class="timeStamp">04:08 </span
+              ><i id="3" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </div>
+          <div class="songItem">
+            <img src="NF_-_The_Search.png" alt="1" />
+            <span class="songName">Nate</span>
+            <span class="songListPlay"
+              ><span class="timeStamp">03:54 </span
+              ><i id="4" class="far songItemPlay fa-play-circle"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+    <!-- This div is for the overlay at the bottom -->
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgress"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <div class="icons">
+        <!-- fontawesome icons  -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far songItemPlay fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="playing.gif" alt="" id="gif" /><span
+          id="masterSongName"
+        ></span>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5fa2be5daf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
